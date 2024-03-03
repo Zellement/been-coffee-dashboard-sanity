@@ -9,6 +9,37 @@ export default defineType({
       name: 'name',
       title: 'Name',
       type: 'string',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'role',
+      title: 'Role',
+      type: 'string',
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'managerKeyHolder',
+      title: 'Manager / Keyholder?',
+      type: 'boolean',
+      initialValue: false,
+    }),
+    defineField({
+      name: 'startDate',
+      title: 'Start date',
+      type: 'date',
+      options: {
+        dateFormat: 'dddd, MMMM Do YYYY'
+      },
+      validation: (Rule) => Rule.required(),
+    }),
+    defineField({
+      name: 'birthday',
+      title: 'Birthday',
+      type: 'date',
+      options: {
+        dateFormat: 'Do MMMM'
+      },
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'slug',
@@ -18,6 +49,7 @@ export default defineType({
         source: 'name',
         maxLength: 96,
       },
+      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'image',
@@ -25,6 +57,21 @@ export default defineType({
       type: 'image',
       options: {
         hotspot: true,
+      },
+    }),
+    defineField({
+      name: 'formerEmployee',
+      title: 'Former employee',
+      type: 'boolean',
+      initialValue: false,
+      description: 'Check this box if the team member is no longer with the company',
+    }),
+    defineField({
+      name: 'lastDay',
+      title: 'Last date',
+      type: 'date',
+      options: {
+        dateFormat: 'dddd, MMMM Do YYYY'
       },
     }),
     defineField({
