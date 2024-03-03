@@ -4,7 +4,7 @@ import {visionTool} from '@sanity/vision'
 import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
-  name: 'default',
+  name: 'been-coffee-dashboard',
   title: 'Been Coffee Dashboard',
 
   projectId: 'mxklvbih',
@@ -15,4 +15,5 @@ export default defineConfig({
   schema: {
     types: schemaTypes,
   },
+
 })
