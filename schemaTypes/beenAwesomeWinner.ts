@@ -41,6 +41,9 @@ export default defineType({
   preview: {
     select: {
       title: 'winner.name',
+      subtitle: 'from',
+      media: 'winner.image',
     },
-  }
+  },
+ 
 })
