@@ -8,6 +8,8 @@ import { FaPen } from "react-icons/fa";
 import { TbCategoryFilled } from "react-icons/tb";
 import { FaUsers } from "react-icons/fa6";
 import { IoIosTrophy } from "react-icons/io";
+import { FaRepeat } from "react-icons/fa6";
+
 
 
 
@@ -36,8 +38,7 @@ export default defineConfig({
 
             S.listItem().title("Orders").icon(RiMoneyPoundCircleFill).child(S.documentTypeList("order")),
 
-            // S.listItem().title("Standing Orders").child(S.documentTypeList("order")),
-
+            S.listItem().title("Standing Orders").icon(FaRepeat).child(S.documentTypeList("standingOrder")),
 
             S.listItem().title("Suppliers").icon(FaTruck).child(S.documentTypeList("supplier")),
 
