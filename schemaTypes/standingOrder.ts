@@ -31,9 +31,6 @@ export default defineType({
       hidden: ({document}) => document?.usualOrder
     }),
   ],
-  initialValue: () => ({
-    orderDate: (new Date()).toISOString().substring(0, 10)
-  }),
   preview: {
     select: {
       title: 'supplier.title',
