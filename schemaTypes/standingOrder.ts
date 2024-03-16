@@ -36,17 +36,17 @@ export default defineType({
   }),
   preview: {
     select: {
-      title: 'orderDate',
-      subtitle: 'supplier.title',
+      title: 'supplier.title',
+      subtitle: 'frequency',
       media: 'supplier.logo'
     },
-    prepare(selection) {
-      const {title, subtitle, media} = selection
-      return {
-        title: `Order date: ${title}`,
-        subtitle: subtitle,
-        media: media
-      }
-    }
+    // prepare(selection) {
+    //   const {title, subtitle, media} = selection
+    //   return {
+    //     title: `${title}`,
+    //     subtitle: subtitle,
+    //     media: media
+    //   }
+    // }
   }
 })
