@@ -23,11 +23,9 @@ export default defineType({
       type: 'boolean',
     }),
     defineField({
-      name: 'categories',
-      title: 'Categories',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'articleCategory'}}],
-      validation: Rule => Rule.required(),
+      name: 'content',
+      title: 'Content',
+      type: 'blockContent',
     }),
     defineField({
       name: 'publishedAt',
@@ -36,9 +34,11 @@ export default defineType({
       validation: Rule => Rule.required(),
     }),
     defineField({
-      name: 'body',
-      title: 'Body',
-      type: 'blockContent',
+      name: 'categories',
+      title: 'Categories',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'articleCategory'}}],
+      validation: Rule => Rule.required(),
     }),
     defineField({
       name: 'slug',
