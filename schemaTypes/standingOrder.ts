@@ -20,12 +20,14 @@ export default defineType({
       name: 'frequency',
       title: 'Frequency',
       type: 'string',
+      validation: Rule => Rule.required()
     }),
     defineField({
       title: 'Standing order details', 
       name: 'standingOrderDetails',
       type: 'array', 
       of: [{type: 'block'}],
+      validation: Rule => Rule.required(),
       hidden: ({document}) => document?.usualOrder
     }),
   ],

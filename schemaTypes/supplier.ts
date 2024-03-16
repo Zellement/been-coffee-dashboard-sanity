@@ -9,11 +9,13 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
+      validation: Rule => Rule.required(),
     }),
     defineField({
       name: 'logo',
       title: 'Logo',
       type: 'image',
+      validation: Rule => Rule.required(),
       options: {
         hotspot: true,
       },
