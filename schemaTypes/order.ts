@@ -53,9 +53,10 @@ export default defineType({
       initialValue: true
     }),
     defineField({
+      title: 'Order details', 
       name: 'orderDetails',
-      title: 'Order details',
-      type: 'text',
+      type: 'array', 
+      of: [{type: 'block'}],
       hidden: ({document}) => document?.usualOrder
     }),
   ],
