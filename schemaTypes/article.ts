@@ -9,6 +9,18 @@ export default defineType({
       name: 'title',
       title: 'Title',
       type: 'string',
+      validation: Rule => Rule.required(),
+    }),
+    defineField({
+      name: 'subtitle',
+      title: 'Subtitle',
+      type: 'string',
+      validation: Rule => Rule.required(),
+    }),
+    defineField({
+      name: 'sticky',
+      title: 'Sticky',
+      type: 'boolean',
     }),
     defineField({
       name: 'slug',
@@ -18,25 +30,19 @@ export default defineType({
         source: 'title',
         maxLength: 96,
       },
-    }),
-    defineField({
-      name: 'mainImage',
-      title: 'Main image',
-      type: 'image',
-      options: {
-        hotspot: true,
-      },
+      validation: Rule => Rule.required(),
     }),
     defineField({
       name: 'categories',
       title: 'Categories',
       type: 'array',
       of: [{type: 'reference', to: {type: 'articleCategory'}}],
+      validation: Rule => Rule.required(),
     }),
     defineField({
       name: 'publishedAt',
       title: 'Published at',
-      type: 'datetime',
+      type: 'date',
     }),
     defineField({
       name: 'body',
@@ -44,4 +50,7 @@ export default defineType({
       type: 'blockContent',
     }),
   ],
+  initialValue: () => ({
+    publishedAt: (new Date()).toISOString().substring(0, 10)
+  }),
 })
