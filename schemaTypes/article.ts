@@ -31,7 +31,27 @@ export default defineType({
       name: 'files',
       title: 'Files',
       type: 'array',
-      of: [{type: 'file'}],
+      of: [
+        {
+          type: 'file',
+          name: 'Files',
+          options: {
+            storeOriginalFilename: true,
+          },
+          fields: [
+            {
+              title: 'Title',
+              name: 'title',
+              type: 'string',
+            },
+            {
+              title: 'File',
+              name: 'file',
+              type: 'file',
+            }
+          ]
+        }
+      ],
     }),
     defineField({
       name: 'publishedAt',
