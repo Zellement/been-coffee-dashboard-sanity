@@ -28,6 +28,12 @@ export default defineType({
       type: 'blockContent',
     }),
     defineField({
+      name: 'files',
+      title: 'Files',
+      type: 'array',
+      of: [{type: 'file'}],
+    }),
+    defineField({
       name: 'publishedAt',
       title: 'Published at',
       type: 'date',
