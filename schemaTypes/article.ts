@@ -33,25 +33,45 @@ export default defineType({
       type: 'array',
       of: [
         {
+          title: 'File',
           type: 'file',
-          name: 'Files',
+          name: 'file',
           options: {
-            storeOriginalFilename: true,
-          },
-          fields: [
-            {
-              title: 'Title',
-              name: 'title',
-              type: 'string',
-            },
-            {
-              title: 'File',
-              name: 'file',
-              type: 'file',
-            }
-          ]
+            originalFilename: true
+          }
+          // fields: [
+          //   {
+          //     title: 'Title',
+          //     name: 'value',
+          //     type: 'string'
+          //   },
+          //   {
+          //     title: 'File',
+          //     name: 'file',
+          //     type: 'file',
+          //   }
+          // ]
         }
-      ],
+        // {
+        //   title: 'File',
+        //   type: 'object',
+        //   fields: [
+        //     {
+        //       title: 'Title',
+        //       name: 'value',
+        //       type: 'string'
+        //     },
+        //     {
+        //       title: 'File',
+        //       name: 'file',
+        //       type: 'file',
+        //       options: {
+        //         originalFilename: true
+        //       }
+        //     }
+        //   ]
+        // }
+      ]
     }),
     defineField({
       name: 'publishedAt',
