@@ -37,7 +37,7 @@ export default defineType({
           type: 'file',
           name: 'file',
           options: {
-            originalFilename: true
+            storeOriginalFilename: true
           }
           // fields: [
           //   {
