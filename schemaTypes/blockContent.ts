@@ -62,6 +62,14 @@ export default defineType({
       type: 'image',
       options: {hotspot: true},
     }),
+    defineArrayMember({
+      type: 'file',
+      name: 'fileVideo',
+      title: 'Video file',
+      options: {
+        accept: 'video/*',
+      },
+    }),
     // defineArrayMember({
     //   type: 'file',
     // }),

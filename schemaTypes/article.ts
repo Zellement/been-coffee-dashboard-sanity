@@ -51,26 +51,26 @@ export default defineType({
           //     type: 'file',
           //   }
           // ]
+        },
+        {
+          title: 'File with title',
+          type: 'object',
+          fields: [
+            {
+              title: 'Title',
+              name: 'value',
+              type: 'string'
+            },
+            {
+              title: 'File',
+              name: 'file',
+              type: 'file',
+              options: {
+                originalFilename: true
+              }
+            }
+          ]
         }
-        // {
-        //   title: 'File',
-        //   type: 'object',
-        //   fields: [
-        //     {
-        //       title: 'Title',
-        //       name: 'value',
-        //       type: 'string'
-        //     },
-        //     {
-        //       title: 'File',
-        //       name: 'file',
-        //       type: 'file',
-        //       options: {
-        //         originalFilename: true
-        //       }
-        //     }
-        //   ]
-        // }
       ]
     }),
     defineField({
