@@ -33,26 +33,6 @@ export default defineType({
       type: 'array',
       of: [
         {
-          title: 'File',
-          type: 'file',
-          name: 'file',
-          options: {
-            storeOriginalFilename: true
-          }
-          // fields: [
-          //   {
-          //     title: 'Title',
-          //     name: 'value',
-          //     type: 'string'
-          //   },
-          //   {
-          //     title: 'File',
-          //     name: 'file',
-          //     type: 'file',
-          //   }
-          // ]
-        },
-        {
           title: 'File with title',
           type: 'object',
           fields: [
