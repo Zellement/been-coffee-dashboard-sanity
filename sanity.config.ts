@@ -9,13 +9,7 @@ import { TbCategoryFilled } from "react-icons/tb";
 import { FaUsers } from "react-icons/fa6";
 import { IoIosTrophy } from "react-icons/io";
 import { FaRepeat } from "react-icons/fa6";
-
-
-
-
-
 import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
-
 
 export default defineConfig({
   name: 'been-coffee-dashboard',
@@ -29,7 +23,6 @@ export default defineConfig({
   },
 
   plugins: [
-    visionTool(),
     structureTool({
       structure: (S, context) => {
         return S.list()
@@ -63,13 +56,10 @@ export default defineConfig({
             }),
             S.listItem().title("Been Awesome Winners").icon(IoIosTrophy).child(S.documentTypeList("beenAwesomeWinner")),
 
-            // ...S.documentTypeListItems().filter(
-            //   item => item.getId() !== 'teamMember'
-            // )  
-
           ])
       },
     }),
+    visionTool(),
   ]
 
 
