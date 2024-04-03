@@ -80,8 +80,8 @@ export default defineType({
       name: 'nextArticle',
       title: 'Next Article',
       description: 'Select the next article, great for linking articles together',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'article'}}],
+      type: 'reference',
+      to: [{type: 'article'}],
     }),
   ],
   initialValue: () => ({
