@@ -10,6 +10,8 @@ import { FaUsers } from "react-icons/fa6";
 import { IoIosTrophy } from "react-icons/io";
 import { FaRepeat } from "react-icons/fa6";
 import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
+import { SiteBrand } from './components/SiteBrand';
+
 
 export default defineConfig({
   name: 'been-coffee-dashboard',
@@ -17,6 +19,7 @@ export default defineConfig({
 
   projectId: 'mxklvbih',
   dataset: 'production',
+  icon: SiteBrand,
 
   schema: {
     types: schemaTypes,
