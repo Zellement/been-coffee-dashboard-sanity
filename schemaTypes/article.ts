@@ -76,6 +76,13 @@ export default defineType({
       },
       validation: Rule => Rule.required(),
     }),
+    defineField({
+      name: 'nextArticle',
+      title: 'Next Article',
+      description: 'Select the next article, great for linking articles together',
+      type: 'array',
+      of: [{type: 'reference', to: {type: 'article'}}],
+    }),
   ],
   initialValue: () => ({
     publishedAt: (new Date()).toISOString().substring(0, 10)
