@@ -42,7 +42,6 @@ export default defineType({
       options: {
         dateFormat: 'Do MMMM'
       },
-      validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'slug',
