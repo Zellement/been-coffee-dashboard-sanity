@@ -7,6 +7,7 @@ import { RiMoneyPoundCircleFill } from "react-icons/ri";
 import { FaPen } from "react-icons/fa";
 import { TbCategoryFilled } from "react-icons/tb";
 import { FaUsers } from "react-icons/fa6";
+import { FaAward } from "react-icons/fa";
 import { IoIosTrophy } from "react-icons/io";
 import { FaRepeat } from "react-icons/fa6";
 import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
@@ -58,6 +59,10 @@ export default defineConfig({
               context,
             }),
             S.listItem().title("Been Awesome Winners").icon(IoIosTrophy).child(S.documentTypeList("beenAwesomeWinner")),
+
+            S.divider(),
+
+            S.listItem().title("Awards").icon(FaAward).child(S.documentTypeList("award")),
 
           ])
       },

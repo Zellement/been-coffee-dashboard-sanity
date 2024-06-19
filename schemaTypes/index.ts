@@ -6,6 +6,7 @@ import order from './order'
 import supplier from './supplier'
 import standingOrder from './standingOrder'
 import beenAwesomeWinner from './beenAwesomeWinner'
+import award from './award'
 
 export const schemaTypes = [
   order,
@@ -16,4 +17,5 @@ export const schemaTypes = [
   teamMember,
   beenAwesomeWinner,
   blockContent,
+  award
 ]
