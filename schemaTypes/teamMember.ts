@@ -44,6 +44,11 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'homebaseUserId',
+      title: 'Homebase User ID',
+      type: 'string',
+    }),
+    defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
