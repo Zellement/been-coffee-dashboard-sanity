@@ -46,7 +46,7 @@ export default defineType({
     defineField({
       name: 'homebaseUserId',
       title: 'Homebase User ID',
-      type: 'string',
+      type: 'number',
     }),
     defineField({
       name: 'slug',
