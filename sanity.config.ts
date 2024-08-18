@@ -8,7 +8,7 @@ import { FaPen } from "react-icons/fa";
 import { TbCategoryFilled } from "react-icons/tb";
 import { FaUsers } from "react-icons/fa6";
 import { FaAward } from "react-icons/fa";
-import { IoIosTrophy } from "react-icons/io";
+import { IoIosTrophy, IoIosNotifications } from "react-icons/io";
 import { FaRepeat } from "react-icons/fa6";
 import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
 import { SiteBrand } from './components/SiteBrand';
@@ -63,6 +63,8 @@ export default defineConfig({
             S.divider(),
 
             S.listItem().title("Awards").icon(FaAward).child(S.documentTypeList("award")),
+
+            S.listItem().title("Notices").icon(IoIosNotifications).child(S.documentTypeList("notice")),
 
           ])
       },
