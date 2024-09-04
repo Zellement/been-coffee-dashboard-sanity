@@ -8,6 +8,7 @@ import standingOrder from './standingOrder'
 import beenAwesomeWinner from './beenAwesomeWinner'
 import award from './award'
 import notice from './notice'
+import tableBooking from './tableBooking'
 
 export const schemaTypes = [
   order,
@@ -19,5 +20,6 @@ export const schemaTypes = [
   beenAwesomeWinner,
   blockContent,
   award,
-  notice
+  notice,
+  tableBooking
 ]

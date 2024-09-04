@@ -12,6 +12,8 @@ import { IoIosTrophy, IoIosNotifications } from "react-icons/io";
 import { FaRepeat } from "react-icons/fa6";
 import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
 import { SiteBrand } from './components/SiteBrand';
+import { MdTableRestaurant } from "react-icons/md";
+
 
 
 export default defineConfig({
@@ -65,6 +67,8 @@ export default defineConfig({
             S.listItem().title("Awards").icon(FaAward).child(S.documentTypeList("award")),
 
             S.listItem().title("Notices").icon(IoIosNotifications).child(S.documentTypeList("notice")),
+
+            S.listItem().title("Table Bookings").icon(MdTableRestaurant).child(S.documentTypeList("tableBooking")),
 
           ])
       },
