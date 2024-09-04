@@ -107,6 +107,7 @@ export type Award = {
   orderRank?: string
   awardGiver?: string
   name?: string
+  shortName?: string
   logo?: {
     asset?: {
       _ref: string
