@@ -9,6 +9,7 @@ import beenAwesomeWinner from './beenAwesomeWinner'
 import award from './award'
 import notice from './notice'
 import tableBooking from './tableBooking'
+import routineTasks from './routineTasks'
 
 export const schemaTypes = [
   order,
@@ -21,5 +22,6 @@ export const schemaTypes = [
   blockContent,
   award,
   notice,
-  tableBooking
+  tableBooking,
+  routineTasks
 ]

@@ -13,6 +13,7 @@ import { FaRepeat } from "react-icons/fa6";
 import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
 import { SiteBrand } from './components/SiteBrand';
 import { MdTableRestaurant } from "react-icons/md";
+import { MdOutlineCleaningServices } from "react-icons/md";
 
 
 
@@ -69,6 +70,8 @@ export default defineConfig({
             S.listItem().title("Notices").icon(IoIosNotifications).child(S.documentTypeList("notice")),
 
             S.listItem().title("Table Bookings").icon(MdTableRestaurant).child(S.documentTypeList("tableBooking")),
+
+            S.listItem().title("Routine Tasks").icon(MdOutlineCleaningServices).child(S.documentTypeList("routineTasks")),
 
           ])
       },
