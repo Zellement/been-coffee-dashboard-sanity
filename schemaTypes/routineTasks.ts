@@ -40,6 +40,12 @@ export default defineType({
       title: 'Ref Link',
       type: 'string',
     }),
+    defineField({
+      name: 'publishedAt',
+      title: 'Published at',
+      type: 'date',
+      validation: Rule => Rule.required(),
+    }),
   ],
   initialValue: () => ({
     publishedAt: (new Date()).toISOString().substring(0, 10)
