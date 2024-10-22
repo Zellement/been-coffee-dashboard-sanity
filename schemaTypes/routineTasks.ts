@@ -39,7 +39,6 @@ export default defineType({
       name: 'ref_link',
       title: 'Ref Link',
       type: 'string',
-      validation: Rule => Rule.required(),
     }),
   ],
   initialValue: () => ({
