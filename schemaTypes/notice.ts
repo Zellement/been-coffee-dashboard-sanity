@@ -6,6 +6,12 @@ export default defineType({
   type: 'document',
   fields: [
     defineField({
+      name: 'alwaysShow',
+      title: 'Always Show',
+      description: 'Always show this task, regardless of date. Must be manually removed.',
+      type: 'boolean',
+    }),
+    defineField({
       name: 'title',
       title: 'Title',
       type: 'string',
@@ -15,12 +21,6 @@ export default defineType({
       name: 'content',
       title: 'Content',
       type: 'blockContent',
-    }),
-    defineField({
-      name: 'alwaysShow',
-      title: 'Always Show',
-      description: 'Always show this task, regardless of date. Must be manually removed.',
-      type: 'boolean',
     }),
     defineField({
       name: 'publishedAt',
