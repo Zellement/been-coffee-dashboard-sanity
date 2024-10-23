@@ -24,12 +24,6 @@ export default defineType({
       validation: Rule => Rule.required(),
     }),
     defineField({
-      name: 'alwaysShow',
-      title: 'Always Show',
-      description: 'Always show this task, regardless of date. Must be manually removed.',
-      type: 'boolean',
-    }),
-    defineField({
       name: 'estimate',
       title: 'Estimate',
       type: 'number',
