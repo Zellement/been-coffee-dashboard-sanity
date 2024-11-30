@@ -7,7 +7,7 @@ export default defineType({
   fields: [
     defineField({
       name: 'w01',
-      title: '1st',
+      title: '1st December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -16,7 +16,7 @@ export default defineType({
     }),
     defineField({
       name: 'w02',
-      title: '2nd',
+      title: '2nd December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -25,7 +25,7 @@ export default defineType({
     }),
     defineField({
       name: 'w03',
-      title: '3rd',
+      title: '3rd December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -34,7 +34,7 @@ export default defineType({
     }),
     defineField({
       name: 'w04',
-      title: '4th',
+      title: '4th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -43,7 +43,7 @@ export default defineType({
     }),
     defineField({
       name: 'w05',
-      title: '5th',
+      title: '5th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -52,7 +52,7 @@ export default defineType({
     }),
     defineField({
       name: 'w06',
-      title: '6th',
+      title: '6th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -61,7 +61,7 @@ export default defineType({
     }),
     defineField({
       name: 'w07',
-      title: '7th',
+      title: '7th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -70,7 +70,7 @@ export default defineType({
     }),
     defineField({
       name: 'w08',
-      title: '8th',
+      title: '8th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -79,7 +79,7 @@ export default defineType({
     }),
     defineField({
       name: 'w09',
-      title: '9th',
+      title: '9th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -88,7 +88,7 @@ export default defineType({
     }),
     defineField({
       name: 'w10',
-      title: '10th',
+      title: '10th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -97,7 +97,7 @@ export default defineType({
     }),
     defineField({
       name: 'w11',
-      title: '11th',
+      title: '11th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -106,7 +106,7 @@ export default defineType({
     }),
     defineField({
       name: 'w12',
-      title: '12th',
+      title: '12th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -115,7 +115,7 @@ export default defineType({
     }),
     defineField({
       name: 'w13',
-      title: '13th',
+      title: '13th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -124,7 +124,7 @@ export default defineType({
     }),
     defineField({
       name: 'w14',
-      title: '14th',
+      title: '14th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -133,7 +133,7 @@ export default defineType({
     }),
     defineField({
       name: 'w15',
-      title: '15th',
+      title: '15th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -142,7 +142,7 @@ export default defineType({
     }),
     defineField({
       name: 'w16',
-      title: '16th',
+      title: '16th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -151,7 +151,7 @@ export default defineType({
     }),
     defineField({
       name: 'w17',
-      title: '17th',
+      title: '17th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -160,7 +160,7 @@ export default defineType({
     }),
     defineField({
       name: 'w18',
-      title: '18th',
+      title: '18th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -169,7 +169,7 @@ export default defineType({
     }),
     defineField({
       name: 'w19',
-      title: '19th',
+      title: '19th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -178,7 +178,7 @@ export default defineType({
     }),
     defineField({
       name: 'w20',
-      title: '20th',
+      title: '20th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -187,7 +187,7 @@ export default defineType({
     }),
     defineField({
       name: 'w21',
-      title: '21st',
+      title: '21st December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -196,7 +196,7 @@ export default defineType({
     }),
     defineField({
       name: 'w22',
-      title: '22nd',
+      title: '22nd December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -205,7 +205,7 @@ export default defineType({
     }),
     defineField({
       name: 'w23',
-      title: '23rd',
+      title: '23rd December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
@@ -214,7 +214,7 @@ export default defineType({
     }),
     defineField({
       name: 'w24',
-      title: '24th',
+      title: '24th December',
       type: 'reference',
       to: [{type: 'teamMember'}],
       options: {
