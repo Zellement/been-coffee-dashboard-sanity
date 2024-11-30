@@ -10,6 +10,7 @@ import award from './award'
 import notice from './notice'
 import tableBooking from './tableBooking'
 import routineTasks from './routineTasks'
+import adventCalendar from './adventCalendar'
 
 export const schemaTypes = [
   order,
@@ -23,5 +24,6 @@ export const schemaTypes = [
   award,
   notice,
   tableBooking,
-  routineTasks
+  routineTasks,
+  adventCalendar
 ]

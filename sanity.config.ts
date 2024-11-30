@@ -14,7 +14,10 @@ import {orderableDocumentListDeskItem} from '@sanity/orderable-document-list'
 import { SiteBrand } from './components/SiteBrand';
 import { MdTableRestaurant } from "react-icons/md";
 import { MdOutlineCleaningServices } from "react-icons/md";
+import { TbChristmasTree } from "react-icons/tb";
 
+const singletonActions = new Set(["publish", "discardChanges", "restore"])
+const singletonTypes = new Set(["adventCalendar"])
 
 
 export default defineConfig({
@@ -24,10 +27,6 @@ export default defineConfig({
   projectId: 'mxklvbih',
   dataset: 'production',
   icon: SiteBrand,
-
-  schema: {
-    types: schemaTypes,
-  },
 
   plugins: [
     structureTool({
@@ -73,11 +72,41 @@ export default defineConfig({
 
             S.listItem().title("Routine Tasks").icon(MdOutlineCleaningServices).child(S.documentTypeList("routineTasks")),
 
+            S.divider(),
+
+            // Our singleton type has a list item with a custom child
+            S.listItem()
+              .title("Advent Calendar")
+              .id("adventCalendar")
+              .child(
+                // Instead of rendering a list of documents, we render a single
+                // document, specifying the `documentId` manually to ensure
+                // that we're editing the single instance of the document
+                S.document()
+                  .title('Advent Calendar')
+                  .schemaType("adventCalendar")
+                  .documentId("adventCalendar")
+              ),
+
           ])
       },
     }),
     visionTool(),
-  ]
+  ],
+  schema: {
+    types: schemaTypes,
 
+    // Filter out singleton types from the global “New document” menu options
+    templates: (templates) =>
+      templates.filter(({ schemaType }) => !singletonTypes.has(schemaType)),
+  },
+  document: {
+  // For singleton types, filter out actions that are not explicitly included
+  // in the `singletonActions` list defined above
+  actions: (input, context) =>
+    singletonTypes.has(context.schemaType)
+      ? input.filter(({ action }) => action && singletonActions.has(action))
+      : input,
+},
 
 })
