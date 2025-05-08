@@ -36,6 +36,11 @@ export default defineType({
       validation: Rule => Rule.required(),
     }),
     defineField({
+      name: 'staff',
+      title: 'Staff Level',
+      type: 'string',
+    }),
+    defineField({
       name: 'ref_link',
       title: 'Ref Link',
       type: 'string',
