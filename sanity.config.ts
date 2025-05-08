@@ -15,6 +15,8 @@ import { SiteBrand } from './components/SiteBrand';
 import { MdTableRestaurant } from "react-icons/md";
 import { MdOutlineCleaningServices } from "react-icons/md";
 import { TbChristmasTree } from "react-icons/tb";
+import { MdPinDrop } from "react-icons/md";
+
 
 const singletonActions = new Set(["publish", "discardChanges", "restore"])
 const singletonTypes = new Set(["adventCalendar"])
@@ -78,6 +80,7 @@ export default defineConfig({
             S.listItem()
               .title("Advent Calendar")
               .id("adventCalendar")
+              .icon(TbChristmasTree)
               .child(
                 // Instead of rendering a list of documents, we render a single
                 // document, specifying the `documentId` manually to ensure
@@ -87,6 +90,11 @@ export default defineConfig({
                   .schemaType("adventCalendar")
                   .documentId("adventCalendar")
               ),
+
+              S.divider(),
+
+              S.listItem().title("Locations").icon(MdPinDrop).child(S.documentTypeList("location")),
+  
 
           ])
       },

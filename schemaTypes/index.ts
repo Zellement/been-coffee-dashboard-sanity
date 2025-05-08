@@ -11,6 +11,7 @@ import notice from './notice'
 import tableBooking from './tableBooking'
 import routineTasks from './routineTasks'
 import adventCalendar from './adventCalendar'
+import location from './location'
 
 export const schemaTypes = [
   order,
@@ -25,5 +26,6 @@ export const schemaTypes = [
   notice,
   tableBooking,
   routineTasks,
-  adventCalendar
+  adventCalendar,
+  location
 ]
